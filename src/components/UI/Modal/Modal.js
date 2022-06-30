@@ -6,7 +6,7 @@ import Auxil from '../../../hoc/Auxil'
 const Modal = (props) => {
   return (
     <Auxil>
-      <Backdrop show = {props.show}/>
+      <Backdrop show = {props.show} clicked={props.modalClosed}/>
     <div className={classes.Modal}
     style={{
         transform:props.show?'translateY(0)' :'translateY(-100vh)',
